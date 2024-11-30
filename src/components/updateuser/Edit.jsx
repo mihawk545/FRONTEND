@@ -17,7 +17,7 @@ const users={
         setUser({...user,[name]:value});        
     }
     useEffect(()=>{
-        axios.get(`https://backend-lc1l.onrender.com/api/getone/${id}`)
+        axios.get(`https://backend-4-q51f.onrender.com/api/getone/${id}`)
         .then((response)=>{
             setUser(response.data)
         }).catch((error)=>{

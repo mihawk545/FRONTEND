@@ -9,7 +9,7 @@ const User = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "https://backend-lc1l.onrender.com/api/getall"
+        "https://backend-4-q51f.onrender.com/api/getall"
       );
       setUsers(response.data);
     };
@@ -18,7 +18,7 @@ const User = () => {
 
   const deleteUser = async (userId) => {
     await axios
-      .delete(`https://backend-lc1l.onrender.com/api/delete/${userId}`)
+      .delete(`https://backend-4-q51f.onrender.com/api/delete/${userId}`)
       .then((response) => {
         setUsers((prevUser) => prevUser.filter((user) => user._id !== userId));
       })
